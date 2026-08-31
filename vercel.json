@@ -22,8 +22,173 @@
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.bigpoker.ru" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bigpoker.ru"
+        }
+      ],
       "destination": "https://bigpoker.ru/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-2-factor-authentication/",
+      "destination": "/acrpoker-login/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-5-card-plo/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-7-day-no-rathole/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-android-apk/",
+      "destination": "/acrpoker-download/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-blitz/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-bombpots/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-bonus/",
+      "destination": "/acrpoker-first-deposit-bonus/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-cashout/",
+      "destination": "/acrpoker-withdrawal/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-daily-double/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-dictionary/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-features/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-hand2note/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-install/",
+      "destination": "/acrpoker-download/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-mirror/",
+      "destination": "/acrpoker-login/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-nl-holdem-rules/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-oss/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-pl-omaha-rules/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-play-it-safe/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-promocode/",
+      "destination": "/acrpoker-first-deposit-bonus/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-rake/",
+      "destination": "/acrpoker-cash-games/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-referral/",
+      "destination": "/acrpoker-first-deposit-bonus/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-reviews/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-risk-management/",
+      "destination": "/acrpoker-staking/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-royal-club/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-sit-crush/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-spin-to-get-in/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-the-beast/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-the-venom/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-venom-fever/",
+      "destination": "/acrpoker-tournaments/",
+      "permanent": true
+    },
+    {
+      "source": "/acrpoker-verification/",
+      "destination": "/acrpoker-registration/",
+      "permanent": true
+    },
+    {
+      "source": "/app/",
+      "destination": "/acrpoker-download/",
+      "permanent": true
+    },
+    {
+      "source": "/en/",
+      "destination": "/",
       "permanent": true
     }
   ],
@@ -31,10 +196,22 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ]
