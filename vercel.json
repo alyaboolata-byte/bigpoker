@@ -190,6 +190,11 @@
       "source": "/en/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/:slug/page/:n",
+      "destination": "/:slug/",
+      "permanent": true
     }
   ],
   "headers": [
