@@ -89,6 +89,7 @@ await emit("index.html", homepage());
 for (const page of oldPages) await emit(`${page[0]}/index.html`, oldArticle(page));
 for (const page of oneWinPages) await emit(`${page[0]}/index.html`, oneWinArticle(page));
 await copyFile(join(root, "styles.css"), join(out, "styles.css"));
+await copyFile(join(root, "favicon.ico"), join(out, "favicon.ico"));
 await emit("google8f3035e0c95e8767.html", "google-site-verification: google8f3035e0c95e8767.html");
 await emit("robots.txt", `User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: ${origin}/sitemap.xml\n`);
 const urls = ["", ...oldPages.map(p => p[0]), ...oneWinPages.map(p => p[0])];
