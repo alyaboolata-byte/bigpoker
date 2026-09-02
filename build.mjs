@@ -48,7 +48,7 @@ function shell({ title, description, slug = "", body, schemaType = "Article" }) 
 <meta name="yandex-verification" content="6254f14f92eca783">
 <title>${esc(title)} | BigPoker.ru</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${canonical}"><link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="canonical" href="${canonical}"><link rel="stylesheet" href="/styles.css">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}">
 <script type="application/ld+json">${JSON.stringify(schema)}</script>
