@@ -263,5 +263,6 @@ await emit("google8f3035e0c95e8767.html", "google-site-verification: google8f303
 await emit("robots.txt", `User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: ${origin}/sitemap.xml\n`);
 const urls = ["", ...oldPages.map(p => p[0]), ...oneWinPages.map(p => p[0])];
 await emit("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(slug => `  <url><loc>${origin}${pathFor(slug)}</loc><lastmod>${today}</lastmod></url>`).join("\n")}\n</urlset>\n`);
+await emit("c6d667f44f3e0557a3937b57e4fc07d0.txt", "c6d667f44f3e0557a3937b57e4fc07d0");  // ключ IndexNow
 await emit("404.html", shell({ title: "Страница не найдена", description: "Запрошенная страница не найдена.", body: `<article class="article"><h1>Страница не найдена</h1><p>Адрес мог измениться. Вернитесь на <a href="/">главную страницу</a> или откройте <a href="/acrpoker-download/">справочник ACR Poker</a>.</p></article>` }));
 console.log(`Built ${urls.length} indexable pages in ${out}`);
