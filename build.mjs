@@ -217,7 +217,7 @@ function shell({ title, description, slug = "", body, schemaType = "Article" }) 
 <meta name="yandex-verification" content="6254f14f92eca783">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-<meta name="google-site-verification" content="0SmWOTMTyOoUZAlVkdqwBsNjC7G4kiCE2xLNB3EIGuI"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="canonical" href="${canonical}"><link rel="stylesheet" href="/styles.css">
+<meta name="google-site-verification" content="0SmWOTMTyOoUZAlVkdqwBsNjC7G4kiCE2xLNB3EIGuI"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="canonical" href="${canonical}"><link rel="stylesheet" href="/styles.css">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}">
 <script type="application/ld+json">${JSON.stringify(schema)}</script>
@@ -259,6 +259,7 @@ for (const page of oldPages) await emit(`${page[0]}/index.html`, oldArticle(page
 for (const page of oneWinPages) await emit(`${page[0]}/index.html`, oneWinArticle(page));
 await copyFile(join(root, "styles.css"), join(out, "styles.css"));
 await copyFile(join(root, "favicon.ico"), join(out, "favicon.ico"));
+await copyFile(join(root, "favicon.svg"), join(out, "favicon.svg"));
 await emit("google8f3035e0c95e8767.html", "google-site-verification: google8f3035e0c95e8767.html");
 await emit("robots.txt", `User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: ${origin}/sitemap.xml\n`);
 const urls = ["", ...oldPages.map(p => p[0]), ...oneWinPages.map(p => p[0])];
