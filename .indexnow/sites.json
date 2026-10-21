@@ -1,0 +1,15 @@
+{
+  "project": "bigpoker-verify",
+  "sites": [
+    {
+      "host": "bigpoker.ru",
+      "projectId": "prj_ZoVNPfJiAsjpZgTaIlnS1JZkNGMa",
+      "key": "c6d667f44f3e0557a3937b57e4fc07d0",
+      "keyLocation": "https://bigpoker.ru/c6d667f44f3e0557a3937b57e4fc07d0.txt",
+      "markerUrl": "https://bigpoker.ru/indexnow-deployment.json",
+      "fallbackUrls": [
+        "https://bigpoker.ru/"
+      ]
+    }
+  ]
+}
